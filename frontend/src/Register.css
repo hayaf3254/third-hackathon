@@ -1,0 +1,118 @@
+/* 全体背景・共通設定 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb; 
+  color: #1f2937; 
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ログインボックス */
+.login-box {
+  /* 背景を白に変更 */
+  background: #ffffff; 
+  padding: 40px;
+  border-radius: 12px;
+  /* 影をより自然なものに変更 */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb; /* 薄い境界線を追加 */
+}
+
+/* タイトル */
+.login-box h2 {
+  margin-bottom: 24px;
+  /* 文字色を黒に近い色に変更 */
+  color: #111827; 
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* ラベル */
+.login-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  /* 文字色をグレーに変更 */
+  color: #374151;
+}
+
+/* 入力欄 */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  /* 境界線を明るいグレーに変更 */
+  border: 1px solid #d1d5db; 
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* 背景色を白に変更 */
+  background-color: #ffffff; 
+  /* 入力文字の色をダークグレーに変更 */
+  color: #111827; 
+  transition: border-color 0.3s ease;
+}
+
+.login-box input::placeholder {
+  /* プレースホルダーの文字色を薄いグレーに変更 */
+  color: #9ca3af; 
+}
+
+.login-box input:focus {
+  outline: none;
+  /* フォーカス時の色を画像に合わせる */
+  border-color: #3b82f6; 
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* フォーカスリングを調整 */
+}
+
+/* ログインボタン */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  /* 画像に合わせた青色に変更 */
+  background: #3b82f6; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  /* ホバー時にもう少し濃い青に変更 */
+  background: #2563eb; 
+}
+
+/* 新規登録リンク */
+.register-link {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  /* 文字色をグレーに変更 */
+  color: #4b5563; 
+}
+
+.register-link a {
+  /* リンクの色をアクセントカラーの青に変更 */
+  color: #3b82f6; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.3s ease;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

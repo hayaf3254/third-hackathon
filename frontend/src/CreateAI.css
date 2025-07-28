@@ -1,0 +1,128 @@
+/* フォーム全体を囲むコンテナ */
+.create-ai-container {
+  max-width: 400px;
+  width:400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+/* フォームのタイトル */
+.create-ai-form h1,
+.create-ai-form h2 {
+  text-align: left;
+  color: #333;
+}
+
+.create-ai-form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.create-ai-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ラベルと入力欄のグループ */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* 入力欄（input, textarea）のスタイル */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #a8e6cf; /* 画像を参考にした薄い緑色の枠線 */
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* paddingを含めてwidth: 100%にする */
+  transition: border-color 0.3s;
+}
+
+/* 入力欄がフォーカスされた時のスタイル */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6dcca3; /* 少し濃い緑色 */
+}
+
+.form-group textarea {
+  resize: vertical; /* 上下方向のみリサイズを許可 */
+}
+
+/* "button-group" という名前がついた要素のデザイン*/
+/* 編集・保存ボタンのコンテナ */
+.button-group {
+  display: flex;
+  justify-content: center; /* ← この行を追加して中央揃えに */
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+/* ボタンのスタイル（リクエスト通り青色に設定） */
+.create-ai-form button {
+  gap:30px;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* 青色 */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 8px; /* ボタン間の余白 */
+}
+
+.create-ai-form button:last-child {
+  margin-right: 0;
+}
+
+/* ボタンにカーソルを合わせた時のスタイル */
+.create-ai-form button:hover {
+  background-color: #0056b3; /* 少し濃い青色 */
+}
+
+/* 非活性時のボタンスタイル */
+.create-ai-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* 実行ボタンを横幅いっぱいに */
+.submit-button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* エラー・保存メッセージのスタイル */
+.error-message, .save-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-message {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+.save-message {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
